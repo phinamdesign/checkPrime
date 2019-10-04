@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính điểm trung bình</title>
+</head>
+<body>
+<script>
+    let math = Number(prompt("Nhập điểm toán"));
+    let literature = Number(prompt("Nhập điểm văn"));
+    let english = Number(prompt("Nhập điểm văn"));
+    let score=(math*2+literature+english*2)/5;
+    while (math>10 || math<0) {
+        math = Number(prompt("Nhập điểm toán"));
+    }
+    while (literature>10 || literature<0) {
+        literature = Number(prompt("Nhập điểm văn"));
+    }
+    while (english>10 || english<0) {
+        english = Number(prompt("Nhập điểm Anh"));
+    }
+    if (score<5){
+        alert("Không đạt");
+    }else  if (score>=5 && score<7.5){
+        alert("Đạt");
+    }else if (score>=7.5 && score < 8.5 ){
+        alert("Khá");
+    }else {
+        alert("Tốt");
+    }
+
+</script>
+</body>
+</html>
